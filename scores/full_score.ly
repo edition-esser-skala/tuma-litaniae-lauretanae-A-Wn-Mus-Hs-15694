@@ -330,7 +330,7 @@
           \new Lyrics \lyricsto Soprano \SubTuumSopranoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "A" "trb 1" }
+            \set Staff.instrumentName = \markup \center-column { "A" "trb 1" "vl 2" }
             \new Voice = "Alto" { \dynamicUp \SubTuumAlto }
           }
           \new Lyrics \lyricsto Alto \SubTuumAltoLyrics

@@ -6,26 +6,57 @@
 
 \book {
   \bookpart {
-    \section "1" "First"
+    \section "1" "Kyrie"
     \addTocEntry
     \paper { indent = 2\cm }
     \score {
       <<
         \new Staff {
           \set Staff.instrumentName = "Organo"
-          \xxxOrgano
+          \KyrieOrgano
         }
-        \new FiguredBass { \xxxBassFigures }
+        \new FiguredBass { \KyrieBassFigures }
       >>
     }
   }
   \bookpart {
-    \section "2" "Second"
+    \section "2" "Sancta Maria"
     \addTocEntry
     \score {
       <<
-        \new Staff { \yyyOrgano }
-        \new FiguredBass { \yyyBassFigures }
+        \new Staff { \SanctaOrgano }
+        \new FiguredBass { \SanctaBassFigures }
+      >>
+    }
+  }
+  \bookpart {
+    \section "3" "Speculum iustitiæ"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \SpeculumOrgano }
+        \new FiguredBass { \SpeculumBassFigures }
+      >>
+    }
+  }
+  \bookpart {
+    \section "4" "Salus infirmorum"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \SalusOrgano }
+        \new FiguredBass { \SalusBassFigures }
+      >>
+    }
+  }
+  \bookpart {
+    \section "5" "Sub tuum præsidium"
+    \addTocEntry
+    \paper { systems-per-page = #3 }
+    \score {
+      <<
+        \new Staff { \SubTuumOrgano }
+        \new FiguredBass { \SubTuumBassFigures }
       >>
     }
   }

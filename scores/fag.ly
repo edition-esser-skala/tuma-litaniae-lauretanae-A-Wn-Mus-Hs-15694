@@ -1,7 +1,7 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "b")
+#(define option-instrument-name "fag")
 \include "score_settings/one-staff.ly"
 
 \book {
@@ -12,8 +12,8 @@
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Bassi"
-          \KyrieOrgano
+          \set Staff.instrumentName = "Fagotto"
+          \KyrieFagotto
         }
       >>
     }
@@ -23,16 +23,17 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \SanctaOrgano }
+        \new Staff { \SanctaFagotto }
       >>
     }
   }
   \bookpart {
     \section "3" "Speculum iustitiæ"
     \addTocEntry
+    \paper { systems-per-page = #3 }
     \score {
       <<
-        \new Staff { \SpeculumOrgano }
+        \new Staff { \SpeculumFagotto }
       >>
     }
   }
@@ -41,7 +42,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \SalusOrgano }
+        \new Staff { \SalusFagotto }
       >>
     }
   }
@@ -51,7 +52,7 @@
     \paper { systems-per-page = #3 }
     \score {
       <<
-        \new Staff { \SubTuumOrgano }
+        \new Staff { \SubTuumFagotto }
       >>
     }
   }

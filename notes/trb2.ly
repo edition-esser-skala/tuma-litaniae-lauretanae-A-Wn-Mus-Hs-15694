@@ -161,7 +161,7 @@ SalusTromboneII = {
 SubTuumTromboneII = {
   \relative c' {
     \clef tenor
-    \key g \minor \time 4/4 \autoBeamOff \tempoSubTuum
+    \key g \minor \time 4/4 \tempoSubTuum
     R1*2
     r2 r4 d~\fE
     d8 d b c d4 d8 d

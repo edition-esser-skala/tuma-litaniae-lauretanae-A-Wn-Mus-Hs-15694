@@ -1,19 +1,22 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "b")
+#(define option-instrument-name "trb 1")
 \include "score_settings/one-staff.ly"
 
 \book {
   \bookpart {
     \section "1" "Kyrie"
     \addTocEntry
-    \paper { indent = 2\cm }
+    \paper {
+      systems-per-page = #4
+      indent = 2.5\cm
+    }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Bassi"
-          \KyrieOrgano
+          \set Staff.instrumentName = "Trombone I"
+          \KyrieTromboneI
         }
       >>
     }
@@ -23,25 +26,27 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \SanctaOrgano }
+        \new Staff { \SanctaTromboneI }
       >>
     }
   }
   \bookpart {
     \section "3" "Speculum iustitiæ"
     \addTocEntry
+    \paper { systems-per-page = #3 }
     \score {
       <<
-        \new Staff { \SpeculumOrgano }
+        \new Staff { \SpeculumTromboneI }
       >>
     }
   }
   \bookpart {
     \section "4" "Salus infirmorum"
     \addTocEntry
+    \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \SalusOrgano }
+        \new Staff { \SalusTromboneI }
       >>
     }
   }
@@ -51,7 +56,7 @@
     \paper { systems-per-page = #3 }
     \score {
       <<
-        \new Staff { \SubTuumOrgano }
+        \new Staff { \SubTuumTromboneI }
       >>
     }
   }

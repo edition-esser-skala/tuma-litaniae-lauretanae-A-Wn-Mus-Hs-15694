@@ -248,7 +248,7 @@ SalusViolinoI = {
 SubTuumViolinoI = {
   \relative c' {
     \clef treble
-    \key g \minor \time 4/4 \autoBeamOff \tempoSubTuum
+    \key g \minor \time 4/4 \tempoSubTuum
     r4 d'\fE d b8 c
     d8. g,16 g8 b a4 d8 d
     c4. b8 a a a8. a16
