@@ -2,11 +2,17 @@
 
 #(define option-movement-title-format "number-title")
 #(define option-init-toc #t)
-#(define option-print-all-bar-numbers #t)
+#(define option-print-all-bar-numbers #f)
 \include "ees.ly"
 
 
 tempoKyrie = \tempoMarkup "Larghetto"
+tempoSancta = \tempoMarkup "[Tempo deest]"
+tempoSpeculum = \tempoMarkup "Affettuoso"
+tempoSalus = \tempoMarkup "Adagio"
+  tempoRegina = \tempoMarkup "Vivace"
+  tempoMiserere = \tempoMarkup "Adagio"
+tempoSubTuum = \tempoMarkup "[Tempo deest]"
 
 
 \include "notes/cnto.ly"
